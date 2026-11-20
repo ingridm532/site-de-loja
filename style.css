@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8f5fa;
+    color: #292331;
+}
+
+header {
+    background: #5d397b;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+nav {
+    background: #43285b;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: #dfc5f5;
+}
+
+.banner {
+    padding: 75px 20px;
+    text-align: center;
+    background: #e7d9f1;
+}
+
+.banner h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 17px;
+}
+
+.produtos {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.produtos h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.vitrine {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.produto {
+    background: white;
+    width: 240px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #00000015;
+    transition: transform 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+}
+
+.produto img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.produto h3 {
+    margin: 12px 0;
+}
+
+.preco {
+    color: #75469a;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+button {
+    background: #68418a;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #43285b;
+}
+
+footer {
+    background: #43285b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        margin: 7px;
+    }
+
+    .banner h2 {
+        font-size: 29px;
+    }
+
+    .produto {
+        width: 100%;
+        max-width: 300px;
+    }
+}
